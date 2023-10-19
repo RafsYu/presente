@@ -1,5 +1,6 @@
 const stamp = document.querySelector("#stamp");
 const heartBeatsCounter = document.querySelector("#hb-counter");
+const wrapper = document.querySelector("#wrapper");
 const lidOne = document.querySelector("#lid-one");
 const lidTwo = document.querySelector("#lid-two");
 const letterContent = document.querySelector("#letter-content");
@@ -9,6 +10,7 @@ stamp.addEventListener("click", () => {
     heartBeats--;
     heartBeatsCounter.textContent = heartBeats;
     if(heartBeats <= 0){
+        wrapper.style.overflow = "visible";
         heartBeatsCounter.style.display = "none";
         lidOne.style.transform = "rotateX(90deg)";
         lidOne.style.transitionDelay = "0s";

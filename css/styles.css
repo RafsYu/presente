@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 
 html {
@@ -293,34 +292,24 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        height: 0;
+    }
+
     header {
-        height: 5vh;
+        height: 10vh;
         gap: 5px;
-        font-size: 0.3em;
+        font-size: 0.5em;
         width: auto;
     }
 
     #landing-page {
-        height: 80vh;
-        font-family: "Pacifico";
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         gap: 5%;
     }
     
     #landing-page div h1 {
-        font-size: 1.5em;
-    }
-    
-    #landing-page span {
-        font-size: 1.1em;
-    }
-    
-    #landing-page div div {
-        display: flex;
-        flex-direction: row;
+        font-size: 2em;
     }
     
     #landing-page div img {
@@ -329,43 +318,16 @@ footer a {
     }
     
     #landing-image {
-        background-image: url("../img/us.webp");
         height: 30vh;
         width: 30vh;
-        background-size: cover;
-        outline: 10px solid white;
-        box-shadow: 20px 20px 2px grey;
-        position: relative;
-    }
-    
-    #landing-image #triple-heart {
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        width: 35%;
-        height: 30%;
     }
     
     #scroll-down-indicator {
-        width: auto;
-        text-align: center;
-        position: absolute;
-        bottom: 10px;
-        gap: 10px;
-    }
-    
-    #scroll-down-indicator p {
-        font-size: 1.5em;
-    }
-    
-    #scroll-down-indicator a {
-        padding: 10px;
+        bottom: 0;
     }
     
     #scroll-down-indicator i {
         font-size: 30px;
-        color: #ff0000;
-        animation: scroll-down-indicator-animation 2s ease-in-out infinite;
     }
 
     #letter {
@@ -398,16 +360,12 @@ footer a {
     }
     
     .envelope {
-        position: absolute;
         height: 100%;
         width: 100%;
-        top: 0;
-        left: 0;
         border-top: 100px solid transparent;
         border-right: 150px solid #e5abb7;
         border-bottom: 100px solid #e5abb7;
         border-left: 150px solid #ea8b9e;
-        z-index: 3;
     }
     
     #letter-content {
@@ -439,9 +397,7 @@ footer a {
     
     #letter-content #date {
         position: absolute;
-        top: 0;
-        right: 20px;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     
     #letter-content #heart {
