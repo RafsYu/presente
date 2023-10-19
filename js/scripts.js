@@ -10,7 +10,9 @@ stamp.addEventListener("click", () => {
     heartBeats--;
     heartBeatsCounter.textContent = heartBeats;
     if(heartBeats <= 0){
-        wrapper.style.overflow = "visible";
+        setTimeout(() => {
+            wrapper.style.overflow = "visible";
+        }, 1500);
         heartBeatsCounter.style.display = "none";
         lidOne.style.transform = "rotateX(90deg)";
         lidOne.style.transitionDelay = "0s";
@@ -22,7 +24,7 @@ stamp.addEventListener("click", () => {
             letterContent.style.zIndex = "4";
         }, 500);
         setTimeout(() => {
-            letterContent.style.transform = "translateY(0px)";
+            letterContent.style.transform = "translateY(-50px)";
         }, 1000);
     } else {
         stamp.style.transform = "scale(1.2)";

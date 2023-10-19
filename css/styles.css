@@ -299,42 +299,37 @@ footer a {
     header {
         height: 10vh;
         gap: 5px;
-        font-size: 0.5em;
+        font-size: 0.7em;
         width: auto;
     }
 
     #landing-page {
         flex-direction: column;
+        height: 90vh;
         gap: 5%;
     }
     
     #landing-page div h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
     
     #landing-page div img {
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
     }
     
     #landing-image {
-        height: 30vh;
-        width: 30vh;
+        height: 40vh;
+        width: 40vh;
     }
     
     #scroll-down-indicator {
-        bottom: 0;
+        position: static;
+
     }
     
     #scroll-down-indicator i {
         font-size: 30px;
-    }
-
-    #letter {
-        height: 100vh;
-        display: flex;
-        justify-self: center;
-        align-items: center;
     }
     
     .wrapper {
@@ -372,32 +367,13 @@ footer a {
         width: 100%;
         height: auto;
     }
-    
-    #letter-content > p {
-        padding-left: 20px;
-        font-size: 25px;
-        margin-top: 30px;
-        color: #3B4049;
-    }
-    
-    #letter-content #sender {
-        margin-top: 10px;
+
+    #letter-content #receiver {
         font-size: 20px;
     }
     
-    #letter-content div p {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: justify;
-    }
-    
-    #letter-content p span {
-        color: #ff0000;
-    }
-    
     #letter-content #date {
-        position: absolute;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     
     #letter-content #heart {
